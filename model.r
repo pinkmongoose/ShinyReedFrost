@@ -68,5 +68,6 @@ DrawGraph <- function() {
     lines(1:(d[1]),d.mean[,2],type="l",col="#FF8888",lwd=3)
     lines(1:(d[1]),d.mean[,3],type="l",col="#88FF88",lwd=3)
   }
+  if (D$vacc>0) rect(0,D$N*(1-D$vacc),length(D$XX)+1,D$N,col="#dddddd",lty="blank")
 }
 
