@@ -68,6 +68,6 @@ DrawGraph <- function() {
     lines(1:(d[1]),d.mean[,2],type="l",col="#FF8888",lwd=3)
     lines(1:(d[1]),d.mean[,3],type="l",col="#88FF88",lwd=3)
   }
-  if (D$vacc>0) rect(0,D$N*(1-D$vacc),D$time_points+1,D$N,col="#dddddd",lty="blank")
+  if (D$vacc>0) rect(0,D$N*(1-D$vacc)/100,D$time_points+1,D$N,col="#dddddd",lty="blank")
 }
 
